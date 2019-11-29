@@ -6,9 +6,3 @@ doc = Nokogiri::HTML(html)
 changes = doc.css(".headline-26OIBN").text
 
 courses = doc.css(".text-4GLMvr .title-oE5vT4")
-
-course_names = text_about_courses.slice(0..3)
-
-course_names.each_with_index do |course, index|
-  puts "#{index+1}. #{course.text}"
-  end
